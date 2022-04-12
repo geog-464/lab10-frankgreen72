@@ -15,4 +15,11 @@ body {
 
 #mapdiv {
 	height: 480px;
+	width: 80%;
+	margin: 2% auto;
+}
+
+#option {
+	width: 80%;
+	margin: 2% auto;
 }

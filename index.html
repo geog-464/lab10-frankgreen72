@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>lab9</title>
-        
+        <title>lab10</title>
+
 		<!--put your external stylesheet links here-->
 		<link rel="stylesheet" href="css/styles.css">
 		<!-- link to leaflet styles -->
@@ -18,15 +18,34 @@
     <body>
         <!--put your initial page content here-->
 		<div id="div1">
+
+      <p>
+        <b>Q2:</b> The function styles geometry. In this case, it looks for <i>points</i>, adjusting fill color to black and opacity to 50%, enabling stroke, and radius, adjusting size of the circle.
+        <br><br>
+        <b>Q4:</b> Feature refers to the data (geojson features here), while layer refers to what modifies the features.
+        <br><br>
+        <b>Q5:</b> layer.option.fill is Boolean (True or False), while get.latlng is numeric (coordinate numbers).
+        <br><br>
+        <b>Q6:</b> It's a complete mess! The fill color is empty and the circles are ridiculously huge!!
+
+      </p>
+
 		</div>
-		<div id="mapdiv">
-			
-		</div>
-		
+
+    <div id="option">
+      <select class="li-nav" name="mapdropdown" id="mapdropdown" onChange="loadMap(this.value);">
+        <option value="map0" selected="selected" disabled>Load a map</option>
+        <option value='mapa'>Amtrak Stations</option>
+        <option value='mapb'>Megacities</option>
+      </select>
+
+    </div>
+
+    <div id="mapdiv">
+    </div>
+
         <!--you can also use this space for internal scripts; you would place these within <script> tags-->
 
-        
-		
 		<!--put your external script links here-->
         <script type="text/javascript" src="js/main.js"></script>
     </body>
